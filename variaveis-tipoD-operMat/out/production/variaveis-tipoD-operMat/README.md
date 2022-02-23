@@ -1,10 +1,12 @@
 # Variáveis, Tipos de Dados e Operadores Matemáticos em JAVA
 
-# CONCEITUAÇÃO
+## VARIÁVEIS
+
+### CONCEITUAÇÃO
 
 *"Um espaço na memória do computador, onde se pode guardar valores."*
 
-### Existem quatro tipos de variáveis:
+### Existem quatro tipos de variáveis (aula 1):
 
 - instância: objeto;
 - classe: classe;
@@ -50,6 +52,78 @@ dado que será recebido pela variável.
 - usar nomes expressivos, ou seja, que possam identificar bem a que se refere a variável;
 - notacaoCamelo;
 - quando constante(final), tudo maiúscula e separada por "_".
+
+### Tipos de dados (aula 2):
+
+### CONCEITUAÇÃO:
+
+*"São os valores e consequentemente operações que as variáveis
+podem assumir e sofrer, respectivamente"*
+
+### Tipificação:
+
+##### Estática(forte) vs Dinâmica(fraco):
+  - Estática, quando uma linguagem obriga a definição do tipo;
+  - Dinâmica, não há essa obrigação.
+    
+  Obs.: há uma relação entre as linguagens interpretadas vs compiladas e a tipagem. 
+
+##### Primitivo vs Composto.
+  - Primitivo, são atômitos(indivisíveis) e homogêneos. São valores numéricos, textuais,
+sendo os valores mais básicos que uma variável pode ter.
+  - Composto, não serão abordados aqui. É um dado heterogêneo, podendo
+ser composto de várias coisas, como varios tipos de dados primitivos, e 
+até mesmo ser composto de outros tipos compostos.
+
+  Obs.: Os tipos atômicos são livres de raças de dados e podem ser 
+modificados e/ou acessados por duas threads diferentes.
+Um dado atômico é muito utilizado quando, por exemplo,
+temos 2 ações distintas que são executadas nesse dado,
+como leitura e gravação, esse tipo de dado também é muito
+utilizado em sistemas operacionais, onde é necessário que um
+dado seja acessado por threads distintas.
+
+#### Opções de Tipos e exemplos:
+
+- textual:
+  - char: caracteres de 16 bits unicode -> char c = '\u0084; ou char c = 'T';
+  - String: um tipo "especial" -> String s = "T";
+
+Obs.1: sempres que trabalharmos com caracteres (char) de forma isolada devemos usar as aspas simples.
+
+Obs.2: (String), embora seja uma classe, um tipo de dado composto, ele acabou se "primitivando", devido a uma necessidade de utilização de tipos de dados textuais. E neste caso as aspas são duplas.
+- numeral: inteiros ou reais (a depender da quantidade de bits maior ou menor a capacidade de armazenamento):
+  - byte: - 128 até 127 -> byte b = 15;
+  - short: -32.768 até 32.767 -> short s = -15785;
+  - int: (inteiros de 32 bits) -2.147.483.648 até 2.147.483.647 -> int i = 8515785
+  - long: (inteiros de 64 bits) -9.223.372.036.854.755.807 -> long l = 5938515785L;
+  - float: (fracionados de 32 bits) +-3.40282347E+38F -> double d = 3.14... (f);
+  - double: (fracionados de 64 bits) +-1.79769313486231570E+308 -> double d = 3.14... (d).
+
+Obs.: em JAVA (f) no final do valor de float é obrigatório, no final de double, opcional.
+- lógico: (Verdadeiro ou Falso)
+  - boolean: true or false -> coolean s = false;
+- objeto: não serão abordados aqui.
+
+### UTILIZAÇÃO:
+
+#### Valor default:
+
+Para cada tipo de dados há um valor padrão, ou seja, se não definirmos um valor para o tipo de dado, ele assumirá o valor padrão.
+
+    byte = 0;
+    short = 0;
+    int = 0;
+    long = 0L;
+    float = 0.0f;
+    double = 0.0d;
+    char = '/u0000'
+    String(e objetos) = null;
+    boolean = false;
+
+#### Boas Práticas:
+
+Usar os tipos de dados adequados às necessidades.
 
 # Links Úteis:
 
