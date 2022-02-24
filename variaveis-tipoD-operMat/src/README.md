@@ -6,7 +6,7 @@
 
 *"Um espaço na memória do computador, onde se pode guardar valores."*
 
-### Existem quatro tipos de variáveis (aula 1):
+### TIPOS DE VARIÁVEIS (aula 1):
 
 - instância: objeto;
 - classe: classe;
@@ -53,7 +53,7 @@ dado que será recebido pela variável.
 - notacaoCamelo;
 - quando constante(final), tudo maiúscula e separada por "_".
 
-### Tipos de dados (aula 2):
+### TIPOS DE DADOS (aula 2):
 
 ### CONCEITUAÇÃO:
 
@@ -124,6 +124,81 @@ Para cada tipo de dados há um valor padrão, ou seja, se não definirmos um val
 #### Boas Práticas:
 
 Usar os tipos de dados adequados às necessidades.
+
+### OPERADORES ARITMÉTICOS (aula 3)
+
+### CONCEITUAÇÃO:
+
+*"São símbolos especias capazes de realizar ações
+específicas em um, dois ou mais operandos e, em 
+seguida, retornar um resultado."*
+
+#### Tipos:
+
+exp = expressão
+
+    posfixado: exp++ ou exp-- (soma ou subtrai uma unidade após usar a expressão.);
+    prefixado: ++exp ou --exp (soma ou subtrai uma unidade antes usar a expressão.);
+    aritmético: +, -, *, / e %(resto da divisão, chamado de mod);
+    atribuição: =, +=, -=, *=, /= e %=;
+
+Exemplos:
+
+-> = significa que
+
+    int i = ++k; -> i = k + 1;
+    int j = k--; -> j = k; então k = k-1;
+    float f = 1.5f + 4.5f;
+    long l = 10398L * 5L;
+    double d = 45d / 4d;
+    int k = 15 % 4;
+    double d = f;
+    i += 5; -> i = i + 5;
+    j -= 3; -> j = j - 3;
+    d /= 2.7d; -> d = d / 2.7d;
+    l *= 3; -> l = l * 3;
+    k %= 2; -> k = k % 2;
+
+#### Precedência
+
+Diz respeito ao que será executado primeiro, no JAVA a ordem é:
+
+    posfixado: exp++ ou exp--
+    prefixado: ++exp ou --exp
+    multiplicativo: *, /, %;
+    aditivo: +, -;
+    atribuitivo: =, +=, -=, *=, /=, %=;
+
+  Obs.: também há uma precedência dentro de cada tipo operador acima;
+
+    operadores: 1º, 2º, 3º...
+
+### CONVERSÕES (casting) (aula 4)
+
+### CONCEITUAÇÃO:
+
+*"É a transformação de uma determinada variável de tipo menos específico
+para um tipo mais específico ou vice-versa"*
+
+Promover ou, rebaixar variáveis para um tipo com maior ou menor
+capacidade de representação e armazenamento.
+
+#### Tipos de Casting:
+
+- Upcast (implícito);
+  - na promoção de uma variável não é preciso informar o tipo(implícito) da promoção, pois como será maior, teoricamente, não haverá problemas.
+- Downcast (explícito).
+  - no rebaixamento de uma variável, eu obrigatóriamente tenho que informar o tipo do rebaixamento, 
+para que a linguagem possa entenda o que será feito e lide com a perda de dados.
+
+Os casting's podem ser feitos em tipos primitivos e compostos (objetos...), e como
+o curso é sobre tipos primitivos. Não será abordado aqui os casos compostos.
+
+Veja a tabela:
+
+![casting](../images/casting.jpeg)
+
+
 
 # Links Úteis:
 
