@@ -198,7 +198,13 @@ Veja a tabela:
 
 ![casting](../images/casting.jpeg)
 
+#### Exemplos:
 
+    long l; int i = 10; l = i; promoção
+    int i; long l = 100; i = (int) l; rebaixamento
+    double d; float f = 10.5f; d = f; promoção
+    float f; double d = 10.5d; f = (float) d; rebaixamento
+    int i; float f = 10.5f; i = (int) f; // CUIDADO!!! HAVERÁ PERDA DE INFORMAÇÃO, ESTOU TRUNCANDO, OU SEJA, ELIMINANDO A PARTE DECIMAL.
 
 # Links Úteis:
 
