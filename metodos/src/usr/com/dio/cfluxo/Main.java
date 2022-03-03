@@ -96,8 +96,6 @@ public class Main {
             System.out.println("Outubro");
         } else if (mes == 11) {
             System.out.println("Novembro");
-        } else {
-            System.out.println("Dezembro");
         } else if (mes == 12) {
             System.out.println("Dezembro");
         } else {
@@ -144,7 +142,7 @@ public class Main {
 
     private static void switchSemana() {
 
-        String dia = "sdgsdgh";
+        String dia = "Terça";
         switch (dia){
             case "Segunda":
                 System.out.println(2);
